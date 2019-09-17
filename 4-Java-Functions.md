@@ -1,9 +1,9 @@
 # Java Functions and Unit Testing
 
-This lab introduces the
-[Fn Java FDK (Function Development Kit)](https://github.com/fnproject/fdk-java)
-and takes you through the developer experience for building and unit testing
-Java functions.
+This lab introduces the [Fn Java FDK (Function Development
+Kit)](https://github.com/fnproject/docs/blob/master/fdks/fdk-java/README.md) and
+takes you through the developer experience for building and unit testing Java
+functions.
 
 > As you make your way through this lab, look out for this icon. ![user
 input](images/userinput.png) Whenever you see it, it's time for you to perform

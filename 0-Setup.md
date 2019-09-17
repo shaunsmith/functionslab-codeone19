@@ -95,9 +95,9 @@ CURRENT NAME      PROVIDER  API URL                                         REGI
 *       workshop  oracle    https://functions.us-phoenix-1.oraclecloud.com  phx.ocir.io/cloudnative-devrel/workshop-NNN
 ```
 
-Now to make sure you can be authenticated correctly and communicate with 
-Oracle Functions let's run a command to list all of the existing applications.
-It doesn't matter what the results--just that it runs successfully to confirm
+Now to make sure you can be authenticated correctly and communicate with Oracle
+Functions let's run a command to list all of the existing applications. It
+doesn't matter what the results are--just that it runs successfully to confirm
 connectivity.
 
 ![user input](images/userinput.png)
@@ -122,7 +122,7 @@ home directory (i.e., /home/demo) type:
 
 ![user input](images/userinput.png)
 >```sh
->git clone https://github.com/shaunsmith/functionslab.git
+>git clone https://github.com/shaunsmith/functionslab-codeone19.git
 >```
 
 In the `functionslab` folder you'll find the sources for this workshop along

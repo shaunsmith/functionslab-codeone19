@@ -18,13 +18,10 @@ This tutorial will show you how to setup your functions development environment
 and then guide you through a series of labs focusing on different topics
 including:
 
-1. Function Basics
-2. Java Functions and Unit testing
-3. Troubleshooting Functions
-4. Automatically invoking functions with OCI Events service
-5. Functions clients including the OCI SDK
-6. Calling functions using oci-curl
-7. Customizing the function execution environment
+1. Java Functions and Unit testing
+2. Troubleshooting Functions
+3. Automatically invoking functions with OCI Events service
+4. Customizing the function execution environment
 
 Step one is getting your environment setup.
 
