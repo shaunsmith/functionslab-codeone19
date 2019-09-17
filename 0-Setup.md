@@ -42,16 +42,10 @@ requirements and record it for use during the workshop.
 
 ![Login New Password](images/login-new-password.png)
 
-![user input](images/userinput.png) Once you've successfully changed
-your password and logged in, log out.  Later on we'll be logging into the
-Phoenix region console.
-
-![Select Region](images/logout.png)
-
 ## Configuring your Environment
 
-Now that your user account is accessible, let's log into the provided VM where
-you'll be ready to start no configuration.
+Now that your OCI user account is initialized, let's log into the provided VM
+which contains all the tools you'll need to develop functions.
 
 To access your cloud-based development environment you'll need a VNC client
 on your laptop.  You can use whatever you have previously installed or you can

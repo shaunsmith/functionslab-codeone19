@@ -96,6 +96,52 @@ The Java function init also generates a Maven `pom.xml` file to build and test
 your function.  The pom includes the Fn Java FDK runtime and the test libraries
 your function needs.
 
+### Creating an Application
+
+Before you can go deploy a function you'll need to create an "Application"
+first. Applications are used to group functions and provide a way to apply
+common configuration. You can create an Application this using the `fn` CLI or
+in the Oracle Functions web console.  We'll use the console as it's somewhat
+simpler to click on options than to copy/paste network IDs for use on the
+command line.
+
+Open your browser to the Oracle Functions console:
+
+![user input](images/userinput.png)
+https://console.us-ashburn-1.oraclecloud.com/functions
+
+![user input](images/userinput.png) Select the "US West (Phoenix)" region which
+we're using for this lab.
+
+![Region Selection](images/region-selection.jpg)
+
+![user input](images/userinput.png) Navigate down the compartment hierarchy on
+the left hand dropdown to the compartment your instructor will provide.
+
+![Applications List](images/applications-compartment.png)
+
+![user input](images/userinput.png) click "Create Application" and complete the
+form with following values where NNN is your lab participant number.  For now,
+leave the Logging Policy as 'NONE'.
+
+**IMPORTANT NOTE**: Lab participants are all working in the same OCI tenancy and
+compartment so to avoid confusion you need to name your applications with your
+participant number. Wherever you see `NNN` in the lab instructions please
+substitute in your number.
+
+>```sh
+> name: `labapp-NNN`
+> vcn: `vcn-codeone19`
+> subnet: `Public Subnet nFuS:PHX-AD-1`
+>```
+
+![Create Application](images/create-application.jpg)
+
+Functions deployed as part of this application will be attached to the
+specified vcn and subnet.
+
+![user input](images/userinput.png) click "Create" to finish.
+
 ## Deploy your Java Function
 
 With the `javafn` directory containing `pom.xml` and `func.yaml` you've got
@@ -265,7 +311,8 @@ public class HelloFunctionTest {
 Let's add a test that confirms that when an input string like "Bob" is
 provided we get the expected result.
 
-![user input](images/userinput.png) Add the following method to the `HelloFunctionTest` class:
+![user input](images/userinput.png) Add the following method to the
+`HelloFunctionTest` class:
 
 
 ```java
